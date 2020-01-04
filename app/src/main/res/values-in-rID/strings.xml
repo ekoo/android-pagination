@@ -1,0 +1,7 @@
+<resources>
+    <string name="release_date">Tahun Rilis</string>
+    <string name="overview">Kilasan Singkat</string>
+    <string name="app_name">Aplikasi Film</string>
+    <string name="tv_show">SERIAL TV</string>
+    <string name="movies">FILM</string>
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Movies App</string>
+    <string name="release_date">Release Year</string>
+    <string name="overview">Overview</string>
+    <string name="movies">Movies</string>
+    <string name="tv_show">TV Shows</string>
+    <string name="add_to_favorite">ADD TO FAVORITE</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="delete_from_favorite">DELETE FROM FAVORITE</string>
+</resources>
