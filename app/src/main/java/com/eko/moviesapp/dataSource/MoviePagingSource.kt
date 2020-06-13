@@ -26,7 +26,7 @@ class MoviePagingSource(private val service: MovieServices = MovieServiceBuilder
 
     companion object{
         private const val STARTING_PAGE_INDEX = 1
-        private const val API_KEY = ""
+        private const val API_KEY = "f40dd80dfd15e64b2484c096e983d840"
         private const val LANGUAGE = "en-EN"
     }
 }
