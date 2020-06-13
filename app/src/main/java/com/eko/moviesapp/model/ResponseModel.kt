@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName
 data class ResponseModel(
 
     @SerializedName("results")
-    val movieModels: List<MovieModel>
+    val movieList: List<MovieModel>
 ) {
     data class MovieModel(
 

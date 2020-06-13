@@ -13,17 +13,20 @@ class MoviePagingSource(private val service: MovieServices = MovieServiceBuilder
         val pagePosition = params.key ?: STARTING_PAGE_INDEX
 
         return try {
-            val response = service.getMovie(API_KET, LANGUAGE, pagePosition).movieModels
-            LoadResult.Page(data = response, prevKey = if (pagePosition == STARTING_PAGE_INDEX) null else pagePosition - 1, nextKey = if (response.isEmpty()) null else pagePosition + 1)
+
+            val data = service.getMovie(API_KEY, LANGUAGE, pagePosition).movieList
+            val prevKey = if (pagePosition == STARTING_PAGE_INDEX) null else pagePosition - 1
+            val nextKey = if (data.isEmpty()) null else pagePosition + 1
+
+            LoadResult.Page(data, prevKey, nextKey)
         } catch (exception: Exception){
             LoadResult.Error(exception)
         }
-
     }
 
     companion object{
         private const val STARTING_PAGE_INDEX = 1
-        private const val API_KET = "f40dd80dfd15e64b2484c096e983d840"
+        private const val API_KEY = ""
         private const val LANGUAGE = "en-EN"
     }
 }
